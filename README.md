@@ -49,7 +49,7 @@ brew install maven
 brew install ant
 ```
 
-### Step 2. Hadoop ###
+### Step 2. Hadoop / RHIPE ###
 
 All the files for Hadoop and Spark will go in a single directory.  Here, we call this directory `hadoop` and put it in our home directory:
 
@@ -216,6 +216,10 @@ library(testthat)
 test_package("Rhipe", "simple")
 ```
 
+### Step 3. Spark / SparkR ###
+
+If you'd like to add Spark / SparkR to your installation, you can follow these steps.
+
 #### Install Spark ####
 
 ```bash
@@ -265,6 +269,8 @@ sc <- sparkR.init(master="spark://__machine_name__.local:7077",
 rdd <- parallelize(sc, 1:10, 2)
 length(rdd)
 ```
+
+### Step 4. Managing the Components ###
 
 #### Environment Variables ####
 
