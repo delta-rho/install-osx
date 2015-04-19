@@ -189,8 +189,8 @@ Make sure you have installed the prerequisites listed previously (protobuf, etc.
 You can either grab it and install:
 
 ```bash
-wget http://ml.stat.purdue.edu/rhipebin/Rhipe_0.75.1_hadoop-2.tar.gz
-R CMD INSTALL Rhipe_0.75.1_hadoop-2.tar.gz
+wget http://ml.stat.purdue.edu/rhipebin/Rhipe_0.75.1.4_hadoop-2.tar.gz
+R CMD INSTALL Rhipe_0.75.1.4_hadoop-2.tar.gz
 ```
 
 Or clone and build it (need ant and maven installed):
@@ -200,7 +200,7 @@ git clone https://github.com/tesseradata/RHIPE
 cd RHIPE
 ant clean
 ant build-distro -Dhadoop.version=hadoop-2
-R CMD INSTALL Rhipe_0.75.1_hadoop-2.tar.gz
+R CMD INSTALL Rhipe_0.75.1.4_hadoop-2.tar.gz
 ```
 
 Note that the version number in `R CMD INSTALL` may be different in this case as this will be the latest version.
